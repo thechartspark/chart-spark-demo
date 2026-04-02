@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="images/logo.png">  
+  <title>TheChartSpark Bot</title>
+  <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link 
+       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;800&display=swap"
+       rel="stylesheet"
+    />
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <!-- Top Header Buttons -->
+    <header class="header">
+        <a href="#home" class="logo">
+            <span>TheChartSpark</span>
+        </a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#spotify">Daily Spotify</a>
+            <a href="#spotify-history">Historical Spotify</a>
+            <a href="#mail">Spotify Mail</a>
+            <a href="#apple">Apple</a>
+            <a href="#youtube">YouTube</a>
+            <a href="#radio">Radio</a>
+            <a href="#billboard">Billboard</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <h1><span>TheChartSpark</span></h1>
+            <h3>Music Stat Visualization <span>Discord Bot</span></h3>
+            <p>TheChartSpark is a Discord bot developed to assist with
+                visualizing music industry data, serving a chart community
+                of over 4,000 members, with commands used over 36,000+ times.
+            </p>
+        </div>
+
+        <div class="home-img">
+            <img src="images/logo.png" alt="TheChartSpark logo">
+        </div>
+    </section>
+    <!-- Spotify Section-->
+    <section class="commands" id="spotify">
+        <h2 class="heading"><span>Spotify</span> Daily Chart Commands</h2>
+        <div class="feature-content">
+        <p>
+            24/7 Spotify Chart Commands allowing one to view daily chart data, for the current date, or any date in the past. All commands are paginated, splitting long data into multiple 
+            pages, enabling one to view all data available for the given command.
+        </p>
+        </div>
+        <div class="command-box">
+            <div class="command-card">
+                <h3>Top Countries</h3>
+                <img src="images/1-top-countries.png" alt="Spotify Chart">
+                <p>Display all regions a song is charting in </p>
+            </div>
+            <div class="command-card">
+                <h3>Top Artist Songs</h3>
+                <img src="images/2-top-artist-songs.png" alt="Spotify Chart">
+                <p>Display the top songs by an artist in a given region/worldwide </p>
+            </div>
+            <div class="command-card">
+                <h3>Top Regional Songs</h3>
+                <img src="images/3-top-regional-songs.png" alt="Spotify Chart">
+                <p>Display the chart of a given region/worldwide</p>
+            </div>
+            <div class="command-card">
+                <h3>Top Regional Highlights</h3>
+                <img src="images/4-top-regional-highlights.png" alt="Spotify Chart">
+                <p>Display the highlights of a regional or worldwide chart, including New Peaks, Re-Entries, Top Gains, Top Losses and dropouts</p>
+            </div>
+            <div class="command-card">
+                <h3>Artist Summary- Songs</h3>
+                <img src="images/5-artist-daily-summary.png" alt="Spotify Chart">
+                <p>Display a summary of all songs by an artist that are charting on a day</p>
+            </div>
+            <div class="command-card">
+                <h3>Artist Summary - Regions</h3>
+                <img src="images/6-artist-country-summary.png" alt="Spotify Chart">
+                <p>Display a summary of all regions an artist is charting songs in</p>
+            </div>
+        </div>
+    </section>
+
+     <!-- Spotify Total Section-->
+    <section class="commands" id="spotify-history">
+        <h2 class="heading"><span>Spotify</span> Historical Chart Commands</h2>
+        <div class="feature-content">
+        <p>
+            Like the daily chart commands, except these commands don't just focus on a single day, they summarize the entire history of the charts.
+        </p>
+        </div>
+        <div class="command-box">
+            <div class="command-card">
+                <h3>Artist History</h3>
+                <img src="images/7-artist-history.png" alt="Spotify Chart">
+                <p>Display all songs by an artist that have charted in a given region, or worldwide. </p>
+            </div>
+            <div class="command-card">
+                <h3>Song History</h3>
+                <img src="images/8-song-history.png" alt="Spotify Chart">
+                <p>Display all regions a given song has ever charted in</p>
+            </div>
+            <div class="command-card">
+                <h3>Chart Run</h3>
+                <img src="images/9-chart-run.png" alt="Spotify Chart">
+                <p>Display the chart run of a given song in a given region, or worldwide.</p>
+            </div>
+            <div class="command-card">
+                <h3>Total Summary</h3>
+                <img src="images/10-total-summary.png" alt="Spotify Chart">
+                <p>Display all songs by an artist that has charted anywhere, sorted by the number of regions charted</p>
+            </div>
+            <div class="command-card">
+                <h3>Cumulative Chart</h3>
+                <img src="images/11-cumulative-chart.png" alt="Spotify Chart">
+                <p>Display a cumulative chart from a given date range in a given region or worldwide, for example, a year-end chart</p>
+            </div>
+            <div class="command-card">
+                <h3>Counter Streams</h3>
+                <img src="images/12-getalbumstreams.png" alt="Spotify Chart">
+                <p>Display of raw, unfiltered, total stream count of an album/track</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mail List Section-->
+    <section class="feature" id="mail">
+        <div class="feature-img">
+            <img src="images/maillist.png" alt="Mail Sending">
+        </div>
+
+        <div class="feature-content">
+            <h2><span>Spotify</span> Mail List Updates</h2>
+            <p>
+            Allows for users in the community to sign up for a customized daily mail experience. Every day, users receieve dms with all features signed up for.
+            </p>
+        </div>
+    </section>
+
+    <!-- Apple Section-->
+    <section class="feature" id="apple">
+        <div class="feature-img">
+            <img src="images/apple-update.png" alt="Apple Music Chart">
+        </div>
+
+        <div class="feature-content">
+            <h2><span>Apple Music</span> Live Chart Updates</h2>
+            <p>
+            Posts realtime updates for Apple Music Charts to the channel. Updates in real-time, as soon as the charts update. <br>
+            Visualizes significant changes in song movements, new all-time positional peaks for songs, along with updates for featured new album releases.
+            </p>
+        </div>
+    </section>
+
+    <!-- YouTube Section-->
+    <section class="feature" id="youtube">
+        <div class="feature-img">
+            <img src="images/youtube-update.png" alt="YouTube Chart">
+        </div>
+
+        <div class="feature-content">
+            <h2><span>YouTube</span> Daily Chart Updates</h2>
+            <p>
+            Posts daily updates for YouTube Music Videos and Song charts worldwide and of various regions, as soon as YouTube updates. <br>
+            </p>
+        </div>
+    </section>
+
+     <!-- Radio Section-->
+    <section class="feature" id="radio">
+        <div class="feature-img">
+            <img src="images/radio-update.png" alt="Radio Chart">
+        </div>
+
+        <div class="feature-content">
+            <h2>US <span>Radio</span> Daily Chart Updates</h2>
+            <p>
+            Posts daily updates for US Radio charts, for 10+ radio genres, along with an overall summary as soon as MediaBase updates. <br>
+            </p>
+        </div>
+    </section>
+
+     <!-- Billboard Section-->
+    <section class="feature" id="billboard">
+        <div class="feature-img">
+            <img src="images/billboard-update.png" alt="Radio Chart">
+        </div>
+
+        <div class="feature-content">
+            <h2><span>Billboard</span> Weekly Chart Updates</h2>
+            <p>
+            Posts weekly billboard updates for over 30+ billboard charts across many genres as soon as Billboard updates. <br>
+            </p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
+
